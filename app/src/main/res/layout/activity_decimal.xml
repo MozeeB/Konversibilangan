@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_main"
+    android:layout_height="match_parent"
+    tools:context=".DecimalActivity">
+
+    <TextView
+        android:id="@+id/font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Konversi Decimal to Octal"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textSize="30dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/font2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="95dp"
+        android:text="Decimal"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/decimal"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/font2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="-3dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Masukan Angka Decimal"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/font"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="176dp"
+        android:background="@drawable/capsule"
+        android:text="Konversi"
+        android:textColor="@color/back" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/capsule"
+        android:text="Back"
+        android:textColor="@color/back" />
+
+    <EditText
+        android:id="@+id/octal"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/decimal"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Masukan Angka Octal"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/font3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/font2"
+        android:layout_alignBottom="@+id/octal"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="7dp"
+        android:textColor="@color/text"
+        android:text="Octal"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
